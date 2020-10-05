@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>&#129360;GALLERY</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Merriweather&family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+    
+  </head>
+
+  <body>
+    <div id="rwd"></div>
+
+    <!-- Navigation -->
+    <nav role="navigation">
+      <div class="container">
+        <div class="logo">
+          <img
+            src="https://cdn.glitch.com/b5d41a28-aa7a-4461-bfb0-b5c027bd1b96%2Fme.png?v=1598997203124"
+            alt="me"
+          />
+          
+        </div>
+        <h1>GALLERY</h1>
+        <ul>
+          <li>
+            <a href="https://yuke-liu-a2.glitch.me/">Home</a>
+          </li>
+          <li>
+            <a href="https://yuke-liu-a2.glitch.me/my-kittens.html"
+              >My Kittens</a
+            >
+          </li>
+          <li>
+            <a href="#">GALLERY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Highlights -->
+    <article class="highlights">
+      <div class="container">
+        <div class="slides">
+          <p>
+            These are the photographies that I took. I took photos to record my
+            life. The places I have been, and the things that I had done.
+          </p>
+          <img
+            id="mainImage"
+            src="https://cdn.glitch.com/b5d41a28-aa7a-4461-bfb0-b5c027bd1b96%2FIUfall.jpeg?v=1601762107255"
+            alt="Fall IUB"
+          />
+          <p id="imgText">Fall at IUB.</p>
+          <br />
+          <button id="Previous" class="pre">&#x0003C;</button>
+          <button id="Next" class="next">&#x0003E;</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Form -->
+    <article class="comment">
+      <div class="container">
+        <form id="my-form" action="http://foo.com" method="get">
+          <label for="comment">Tell me which image you like the most: </label>
+          <br />
+          <input
+            type="text"
+            id="comment"
+            name="comment"
+            required
+            class="inputBox"
+          />
+          <br />
+          <input
+            type="submit"
+            value="Submit"
+            class="button"
+            style="padding: 8px 30px;"
+          />
+        </form>
+        <ul id="output"></ul>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+      <p style="font-size:30px">
+        &copy;YUKE&#129360;
+      </p>
+    </footer>
+  </body>
+</html>

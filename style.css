@@ -1,0 +1,388 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* General */
+body {
+  background-color: #4D5B48;
+  color: white;
+  height: 100%;
+}
+
+.container {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.3em;
+  text-align: center;
+  padding: 2em 0.5em;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+img {
+  width: 100%;
+}
+
+img:hover {
+  -webkit-transform: scale(1.5); /* or some other value */
+  transform: scale(1.5);
+}
+
+/* Typography */
+/* https://fonts.google.com/
+Merriweather - light - headlines
+Montserrat - light, normal - body copy */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+}
+
+p,
+td,
+small,
+figcaption,
+address,
+label {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+}
+
+nav h1{
+  font-family: "Freckle Face", cursive;
+}
+
+li{
+  font-family: "Freckle Face", cursive;
+  font-size:20px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+h2 + p {
+  margin-top: 0.5em;
+}
+
+.tagline {
+  margin: 0.5em 0 2em;
+  font-size: 14px;
+}
+
+/* Links */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+  border-bottom: 1.5px dotted #FFFFFF;
+}
+
+a:active,
+a:hover {
+  color: #87A37D;
+  border-bottom: 1.5px solid #87A37D;
+}
+
+/* Buttons */
+.button {
+  background-color: rgba(123, 145, 115, 0.8);
+  text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  color: white;
+}
+
+.button:hover {
+  background-color: #581845;
+}
+
+/* Utilities */
+.no-break {
+  white-space: nowrap;
+}
+
+/* Navigation */
+
+.logo img {
+  max-width: 150px;
+}
+
+nav .container {
+  padding: 1em 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #d42a3a;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li:first-child {
+  padding-left: 0;
+}
+nav ul li:last-child {
+  padding-right: 0;
+}
+
+/* Highlights */
+
+/* .highlights {
+    text-shadow: 1px 1px 2px white;
+} */
+
+.highlights .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 80%;
+}
+
+.highlights section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px 30px;
+  margin: 2em 15px 1em;
+  flex: 1 0 250px;
+  position: relative;
+  color: #4D5B48;
+}
+.self {
+  width: 80%;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5em 0 1.5em;
+}
+
+.self p,
+h1 {
+  text-shadow: 1px 1px 2px white;
+}
+
+.highlights .icon {
+  position: absolute;
+  top: -25px;
+  left: 45%;
+  color: #855C33;
+}
+
+.highlights .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-shadow: 1px 1px 2px white;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+}
+
+/*Slides*/
+/*Slide show*/
+
+.slides {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.slides img {
+  max-width: 80%;
+  object-fit: scale-down;
+}
+
+#mainImage {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pre,
+.next {
+  cursor: pointer;
+  text-align: center;
+  border: 2px;
+  border-style: none none dashed none;
+  background-color: rgba(176, 196, 169, 0.2);
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  margin: 4px 2px;
+}
+
+.next {
+  left: 55%;
+}
+
+.pre:focus,
+.next:focus {
+  background-color: #87A37D;
+  color: white;
+  opacity: 0.4;
+}
+
+.pre:hover,
+.next:hover {
+  color: rgb(176, 196, 169);
+  background-color: white;
+  opacity: 0.2;
+}
+
+/* Form */
+
+.comment .container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  background-color: rgba(123, 145, 115, 0.8);
+  text-align: center;
+}
+
+.button {
+  background-color: rgba(123, 145, 115, 0.8);
+  text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  color: white;
+}
+
+.comment ul li {
+  list-style-type: none;
+}
+
+/* Footer */
+/*footer*/
+footer {
+  border-top: 3px solid white;
+  width: 100%;
+  padding: 50px 0px 50px;
+  margin-top: 150px;
+}
+
+footer p {
+  text-align: center;
+  font-family: "Freckle Face", cursive;
+}
+
+/* MEDIA QUERIES */
+/* Small devices (phones, 600px and up) */
+@media screen and (min-width: 240px) {
+  body {
+    background-color: #0A4049;
+  }
+  .container,
+  .self,
+  .schedule,
+  .comment .container {
+    background-color: rgba(14, 91, 104, 0.8);
+  }
+  .button {
+    background-color: rgba(14, 91, 104, 0.8);
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: white;
+  }
+}
+
+/* Medium devices (tablets, 979px and up) */
+@media screen and (min-width: 640px) {
+  body {
+    background-color: #5F0717;
+  }
+  .container,
+  .self,
+  .schedule,
+  .comment .container {
+    background-color: rgba(150, 11, 37, 0.8);
+  }
+  .button {
+    background-color: rgba(150, 11, 37, 0.8);
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: white;
+  }
+}
+
+/* Large devices (desktops, 960px and up) */
+@media screen and (min-width: 960px) {
+  body {
+    background-color: #4D5B48;
+  }
+  .container,
+  .self,
+  .schedule,
+  .comment .container {
+    background-color: rgba(96, 111, 89, 0.8);
+  }
+  .button {
+    background-color: rgba(96, 111, 89, 0.8);
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: white;
+  }
+}
